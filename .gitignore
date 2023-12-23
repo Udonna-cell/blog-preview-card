@@ -1,0 +1,12 @@
+design/
+dist/css/
+dist/index.html
+install.sh
+node_modules/
+# package-lock.json
+# package.json
+README-template.md/
+README.md/
+# src
+style-guide.md/
+# tsconfig.json

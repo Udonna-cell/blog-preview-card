@@ -1,0 +1,87 @@
+@import "reset";
+@import "color";
+@font-face {
+  font-family: "Figtree-ExtraBold";
+  src: url("assets/fonts/static/Figtree-ExtraBold.ttf");
+}
+$radius: 1.3rem;
+
+
+body {
+  background: $Yellow;
+  height: 100vh;
+  font-family: "Figtree-ExtraBold", san-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+  
+  p {
+    font-size: 0.9em;
+  }
+  >.attribution {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 2%;
+  }
+  
+  > section {
+    background: $White;
+    max-width: 290px;
+    padding: 1rem;
+    border: 1.2px solid $Black;
+    border-radius: $radius;
+    box-shadow: 10px 10px 1px $Black;
+
+    > figure {
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        border-radius: $radius;
+      }
+    }
+    p.highlight {
+      background: $Yellow;
+      font-weight: 700;
+      display: inline-block;
+      padding: 0.6rem 0.7rem;
+      border-radius: calc($radius / 3);
+      margin-top: 1rem;
+    }
+    > article {
+      /* background: gray; */
+      > h1 {
+        margin-top: 1rem;
+        &:hover {
+          color: $Yellow;
+        }
+      }
+      > p.tag {
+        margin-top: 1rem;
+      }
+      > p.article {
+        color: $Grey;
+        text-wrap: pretty;
+        margin-top: 1rem;
+      }
+      div.profile {
+        width: 35px;
+        img {
+          width: 100%;
+        }
+      }
+      aside {
+        /* background: green; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 0.8rem;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
