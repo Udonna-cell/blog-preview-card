@@ -1,5 +1,16 @@
 extends ../layout.pug
 
+extends info
+  meta(property='og:title', content='Blog Preview card')
+  meta(property='og:description', content='A simple blog Preview card')
+  meta(property='og:image', content='assets/images/illustration-article.svg')
+  //- meta(property='og:url', content='URL to Your Page')
+
+  //- Optional: Additional meta tags for better presentation
+  
+  meta(property='og:site_name', content='Blog Preview card')
+  meta(property='og:type', content='website')
+
 block container
   section
     figure 
