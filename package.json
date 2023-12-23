@@ -4,6 +4,7 @@
   "description": "![Design preview for the Blog preview card coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
+    "build": "bash build.sh",
     "compile:pug": "pug src/pug/page/ -o dist",
     "compile:sass": "sass src/sass/style.scss dist/css/style.css",
     "compile:ts": "tsc -p src/ts",
